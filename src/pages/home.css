@@ -1,0 +1,12 @@
+@tailwind components;
+
+* {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.home {
+	background-image: url("../assets/images/unsplash-black.jpg");
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(8px);
+}

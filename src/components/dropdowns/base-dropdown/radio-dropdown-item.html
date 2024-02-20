@@ -1,0 +1,16 @@
+<!-- radio-dropdown-item.html -->
+<div x-data="{ isChecked: false }">
+	<label
+		class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+		role="menuitem"
+	>
+		<!-- Radio button -->
+		<input
+			type="radio"
+			x-model="isChecked"
+			class="form-radio h-4 w-4 mr-2 text-indigo-600 transition duration-150 ease-in-out"
+		/>
+		<!-- SVG file for a single icon -->
+		Dropdown item with radio button
+	</label>
+</div>

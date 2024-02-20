@@ -1,0 +1,15 @@
+<!-- dropdown-item.html -->
+<div x-data="{ isChecked: false }">
+	<label
+		class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+		role="menuitem"
+	>
+		<!-- Checkbox -->
+		<input
+			type="checkbox"
+			x-model="isChecked"
+			class="form-checkbox h-4 w-4 mr-2 text-indigo-600 transition duration-150 ease-in-out"
+		/>
+		Dropdown item with checkbox
+	</label>
+</div>
