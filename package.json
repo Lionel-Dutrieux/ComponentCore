@@ -8,7 +8,9 @@
     "watch:dev": "webpack",
     "watch:storybook": "storybook dev -p 6006",
     "build": "webpack --config webpack.prod.js",
-    "build-storybook": "storybook build"
+    "build-storybook": "npm-run-all --sequential development:build-dev development:build-storybook",
+    "development:build-dev": "webpack --no-watch",
+    "development:build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +42,7 @@
     "imagemin-svgo": "^10.0.1",
     "imagemin-webp": "^8.0.0",
     "mini-css-extract-plugin": "^2.8.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.35",
     "postcss-loader": "^8.1.0",
     "react": "^18.2.0",
