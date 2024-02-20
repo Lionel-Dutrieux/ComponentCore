@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - id: build-publish
       uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
